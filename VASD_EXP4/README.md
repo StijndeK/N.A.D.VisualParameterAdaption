@@ -18,11 +18,3 @@ the number and layer number have been inverted
 For example:
 2_1_NameAndOtherInformation_124.wav
 is the first track on the second layer and can loop or transition to track 2 or 4
- 
-## Reflection
-| Improvements    | Drawback       | Missing  |
-| ------------- |:-------------:| -----:|
-| basic adaption to game parameters | requires more user input | Transition techniques |
-| | | Added context, both visual and interactive |
-| | | Not a lot to overview yet |
-| | | Chance percentages |

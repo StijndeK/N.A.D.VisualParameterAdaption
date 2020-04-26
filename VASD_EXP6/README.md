@@ -5,7 +5,7 @@ The sixth VASD prototype. EXP6 builds further on [EXP5](https://github.com/Stijn
 - [EXP6](https://streamable.com/uvkjxm)
 <img width="1306" alt="VASD_EXP6" src="https://user-images.githubusercontent.com/31696336/79067862-d3f88280-7cc2-11ea-83de-1272f8238e1e.png">
 
-## Data flow
+## Dataflow
 <img width="1261" alt="VASD_EXP6_Dataflow" src="https://user-images.githubusercontent.com/31696336/79068833-1f625f00-7cca-11ea-98f7-a95e34ac824b.png">
 
 ## Design
@@ -23,11 +23,3 @@ Place audio files in the 'bouncelocation' folder in the same folder as the unity
 For example:
 2_1_NameAndOtherInformation_124.wav
 is the first track on the second layer and can loop or transition to track 2 or 4
- 
-## Reflection
-| Improvements    | Drawback       | Missing  |
-| ------------- |:-------------:| -----:|
-| way more possibilities with 2 axes | | other transition techniques |
-| dynamic amount of layer boxes | | Added context, both visual and interactive |
-| textual feedback in the terminals | | Probability |
-
