@@ -12,7 +12,7 @@ VPA is the second experiment for my thesis on: Tools for Designing Nonlinear Aud
 Because of the need for a visual interfase and the application of N.A.D. on games, VPA is build in Unity using the [FMOD Core API](https://fmod.com/resources/documentation-api?version=2.0&page=core-guide.html), which allows for quick prototyping with certain game-specific functionalities easily available.
 
 ## Example current version
-- [This video](https://streamable.com/uvkjxm) shows the project used to test audio systems for project Rookery. Rookery is a walking simulator currently under development, set in Victorion London.
+- [This video](https://streamable.com/y6rm5e) shows the latest version of the project used to test audio systems for project Rookery. A walking simulator type game currently under development.
 ![HighresScreenshot00046 copy](https://user-images.githubusercontent.com/31696336/81261235-fff5f200-903b-11ea-8ebb-8e6addefe3ef.png)
 <img width="1306" alt="VASD_EXP6" src="https://user-images.githubusercontent.com/31696336/79067862-d3f88280-7cc2-11ea-83de-1272f8238e1e.png">
 
