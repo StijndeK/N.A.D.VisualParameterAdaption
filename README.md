@@ -14,7 +14,6 @@ Because of the need for a visual interfase and the application of N.A.D. on game
 ## Example current version
 - [This video](https://streamable.com/y6rm5e) shows the latest version of the project used to test audio systems for project Rookery. A walking simulator type game currently under development.
 ![HighresScreenshot00046 copy](https://user-images.githubusercontent.com/31696336/81261235-fff5f200-903b-11ea-8ebb-8e6addefe3ef.png)
-<img width="1306" alt="VASD_EXP6" src="https://user-images.githubusercontent.com/31696336/79067862-d3f88280-7cc2-11ea-83de-1272f8238e1e.png">
 
 ### Older versions
 - [EXP3 video](https://streamable.com/434ev)
