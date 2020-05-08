@@ -20,7 +20,7 @@ Procedural Audio System (working title) is the third experiment in a range of ex
 - [EXP6 video](https://streamable.com/y6rm5e)
 
 ## Dataflow
-The program has 4 main components. The fileloader loads the audiofiles and parses the information obtained from the filenames. The spawner allows the user to spawn `Layers` containing horizontal loops with variations, that can be dragged into the sequencer. The sequencer checks if certain parameters are checked to see if and what sound needs to be played. The controler eventually calls the audio.
+The program has 4 main components. The `Fileloader` loads the audiofiles and parses the information obtained from the filenames. The `Spawner` allows the user to spawn `Layers` containing horizontal loops with variations, that can be dragged into the `Sequencer`. The `Sequencer` checks if certain parameters are checked to see if and what sound needs to be played. The `Controler` eventually calls the audio.
 <img width="1261" alt="VASD_EXP6_Dataflow" src="https://user-images.githubusercontent.com/31696336/79068833-1f625f00-7cca-11ea-98f7-a95e34ac824b.png">
 
 Because of the need for a visual interfase and the application of N.A.D. on games, VPA is build in Unity using the FMOD Core API. This allows for quick prototyping.
