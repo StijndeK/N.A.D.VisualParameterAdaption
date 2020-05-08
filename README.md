@@ -4,7 +4,7 @@ VPA uses a visual overview and interface along with the automatic file loading f
 ## NADT
 Procedural Audio System (working title) is the third experiment in a range of experiments meant to adress obstructions in the process of designing and prototyping nonlinear audiosystems. [Click here](http://sdkoning.com/PF/N.A.D.T..html) for more information on the project.
 
-#### Other N.A.D. tools & experiments
+### Other N.A.D. tools & experiments
 - [N.A.D Automatic File Loading in Python](https://github.com/StijndeK/N.A.D.AutomaticSoundloader)
 - [N.A.D Procedural Audio System](https://github.com/StijndeK/N.A.D.ProceduralAudioSystem)
 
