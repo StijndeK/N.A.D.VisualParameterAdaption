@@ -1,24 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class TextOutput : MonoBehaviour
 {
-    Text txt;
-    // acces to text
-    GameObject fileLoaderObject;
-
-    void Start()
-    {
-        // text output
-        txt = gameObject.GetComponent<Text>();
-
-        fileLoaderObject = GameObject.FindGameObjectWithTag("fileloader");
-    }
+    public int type;
 
     void Update()
     {
-        txt.text = fileLoaderObject.GetComponent<AutoFileLoader>().textForOutput;
+        // on 0: files loaded, on 2: terminal output
+        // would be much quicker using pointers when converting to C++
+        gameObject.GetComponent<Text>().text = (type == 0) ? AutoFileLoader.textForOutput : SoundSystem.textForOutput;
     }
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class ManagerTexter : MonoBehaviour
@@ -10,7 +8,7 @@ public class ManagerTexter : MonoBehaviour
 
     GameObject soundSystemObject;
 
-    void Start()
+    private void Start()
     {
         soundSystemObject = GameObject.FindGameObjectWithTag("controler");
         txt = gameObject.GetComponent<Text>();

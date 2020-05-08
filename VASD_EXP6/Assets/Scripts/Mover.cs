@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
@@ -21,7 +19,6 @@ public class Mover : MonoBehaviour
         // TODO: only set position when object gets moved or grid size changes. so move setposition to sequencer class, which listens to grid or movement changes
         SetPosition();
 
-        // check if box is pressed 
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 cords = transform.position;
@@ -34,13 +31,10 @@ public class Mover : MonoBehaviour
                 moveState = true;
             }
         }
-        // stop movestate and set the position when mouse is released
         if (Input.GetMouseButtonUp(0))
         {
-            //SetPosition();
             moveState = false;
         }
-        // set the box position to mouse position during movestate
         if (moveState == true)
         {
             Vector3 mouseCords = Input.mousePosition;

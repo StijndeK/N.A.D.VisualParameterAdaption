@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class LayerBoxManager : MonoBehaviour
@@ -10,12 +7,12 @@ public class LayerBoxManager : MonoBehaviour
 
     void Start()
     {
-        removeButton.onClick.AddListener(removeButtonPressed);
+        removeButton.onClick.AddListener(RemoveButtonPressed);
     }
 
-    private void removeButtonPressed()
+    private void RemoveButtonPressed()
     {
         Destroy(gameObject);
-        //TODO: remove it from duplicates list (use vectors)
+        //TODO: remove layer from duplicates list (use vectors)
     }
 }

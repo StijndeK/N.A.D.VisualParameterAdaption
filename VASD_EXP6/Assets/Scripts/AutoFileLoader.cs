@@ -1,34 +1,23 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using FMOD;
-using System;
 using UnityEngine.UI;
 
 public class AutoFileLoader : MonoBehaviour
 {
-    // list containing al wav files
     public List<string> fileNames;
-    public List<List<List<string>>> entryList2 = new List<List<List<string>>>();
+    public static List<List<List<string>>> entries = new List<List<List<string>>>(); // TODO: dataset instead of 3d list
 
-    // input
-    public UnityEngine.UI.InputField inputFieldBPM;
-    public UnityEngine.UI.InputField inputFieldBeats;
-    public int layerAmount;
+    public InputField inputFieldBPM;
+    public InputField inputFieldBeats;
 
-    // transitioning
-    public List<int> transitionValues = new List<int>();
+    public static int layerAmount;
 
-    // text output
-    public string textForOutput;
+    public static string textForOutput;
 
-    // Parameterss
-    public List<int> parameterX = new List<int>();
-
-    // Folder location
-    public UnityEngine.UI.InputField inputField3;
+    public InputField folderLocationInput;
     public Button loadButton;
-    public string folderLocation = "../BounceLocation/";
+    public static string folderLocation = "../BounceLocation/";
 
     private void Start()
     {
@@ -37,7 +26,7 @@ public class AutoFileLoader : MonoBehaviour
 
     void LoadButtonPressed()
     {
-        folderLocation = inputField3.text;
+        folderLocation = folderLocationInput.text;
         print("new path set to: " + folderLocation);
     }
 
@@ -46,31 +35,33 @@ public class AutoFileLoader : MonoBehaviour
         DirectoryInfo dir = new DirectoryInfo("../BounceLocation");
         FileInfo[] info = dir.GetFiles("*.wav*");
 
+        // get and initialise all sounds
         int oldValue = 0;
         foreach (FileInfo f in info)
         {
             fileNames.Add(f.Name);
-            // get layerAmount
+            AudioPlayer.InitSound(f.Name);
+            print(f.Name);
+
+            // set layeramount by checking for highest layer
             if (int.Parse(f.Name[0].ToString()) > oldValue)
             {
                 layerAmount = int.Parse(f.Name[0].ToString());
             }
         }
 
-        // initialise entrylist
+        // initialise lists for every layer
         for (int i = 0; i < layerAmount; i++)
         {
-            entryList2.Add(new List<List<string>>());
-            transitionValues.Add(0);
-            parameterX.Add(0);
+            entries.Add(new List<List<string>>());
+            SoundSystem.transitionValues.Add(0);
+            SoundSystem.layerActiveChecks.Add(0);
         }
 
-        // parse list
-        print("loaded files: ");
+        // parse list with layers and possible transitions
         textForOutput = textForOutput + "loaded files: ";
         for (int i = 0; i < fileNames.Count; i++)
         {
-            print(fileNames[i]);
             textForOutput = textForOutput + "\n" + fileNames[i];
 
             // get transition possibilities for loop from filename
@@ -79,7 +70,7 @@ public class AutoFileLoader : MonoBehaviour
             while (true)
             {
                 int number;
-                bool result = Int32.TryParse(tempName[tempName.Length - 1].ToString(), out number);
+                bool result = int.TryParse(tempName[tempName.Length - 1].ToString(), out number);
                 if (result)
                 {
                     possibleTransitions += number.ToString();
@@ -91,12 +82,11 @@ public class AutoFileLoader : MonoBehaviour
                 }
             }
 
-            // pass name and transition possibilities per track to entry list
-            entryList2[int.Parse(fileNames[i][0].ToString()) - 1].Add(new List<string> { fileNames[i], possibleTransitions });
+            entries[int.Parse(fileNames[i][0].ToString()) - 1].Add(new List<string> { fileNames[i], possibleTransitions });
         }
     }
 
-    public float calculateTime()
+    public float CalculateTime()
     {
         float beatsPerMinute = float.Parse(inputFieldBPM.text);
         float beatAmount = float.Parse(inputFieldBeats.text);
