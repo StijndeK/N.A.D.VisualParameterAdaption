@@ -7,7 +7,7 @@ Procedural Audio System (working title) is the third experiment in a range of ex
 
 #### Other N.A.D. tools & experiments
 - [N.A.D Automatic File Loading in Python](https://github.com/StijndeK/N.A.D.AutomaticSoundloader)
-- [N.A.D Procedural Audio System](https://github.com/StijndeK/N.A.D.ProceduralAudioSystem)
+- [N.A.D Procedural Audio System](https://github.com/StijndeK/N.A.D.ProcederalAudioSystem)
 
 ## Example current version
 ![HighresScreenshot00046 copy](https://user-images.githubusercontent.com/31696336/81261235-fff5f200-903b-11ea-8ebb-8e6addefe3ef.png)
@@ -28,7 +28,7 @@ Because of the need for a visual interfase and the application of N.A.D. on game
 
 
 ## Current status & improvements
-As an investigation into using a visual approach to upgrade the process of designing nonlinear audio for games and communicating about them, VPA has achieved its goal. However, the project only scratches the surface of nonlinear gameaudio possibilities and its current version conditions the user quite heavily into using certain techniques. Moreover, the current system could be more easily adaptable, mainly due to the Unity based 'objectcomponents approach'. This is also the reason [the next experiment](https://github.com/StijndeK/N.A.D.ProceduralAudioSystem) completely steps away from this approach.
+As an investigation into using a visual approach to upgrade the process of designing nonlinear audio for games and communicating about them, VPA has achieved its goal. However, the project only scratches the surface of nonlinear gameaudio possibilities and its current version conditions the user quite heavily into using certain techniques. Moreover, the current system could be more easily adaptable, mainly due to the Unity based 'objectcomponents approach'. This is also the reason [the next experiment](https://github.com/StijndeK/N.A.D.ProcederalAudioSystem) completely steps away from this approach.
 
 Features to be added in the future include:
 - Probability
