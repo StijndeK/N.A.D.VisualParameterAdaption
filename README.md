@@ -1,6 +1,6 @@
 # N.A.D. Visual Parameter Adaption
 VPA is a prototype tool that uses a visual overview and interface along with the automatic file loading functionality carried over from [N.A.D Automatic File Loading](https://github.com/StijndeK/N.A.D.AutomaticSoundloader)
-, to look into upgrading the process of prototyping nonlinear systems and improving (interdisciplinary) communication. Because audio is a nonvisual medium and therefore always is experienced linearely, it can prove difficult to fully understand nonlinear audio systems design.
+, to look into upgrading the process of prototyping nonlinear systems and improving (interdisciplinary) communication. Because audio is a nonvisual medium and therefore always is experienced linearely, it can prove difficult to fully understand nonlinear audiosystems design.
 
 ## NADT
 Procedural Audio System (working title) is the third experiment in a range of experiments meant to adress obstructions in the process of designing and prototyping nonlinear audiosystems. [Click here](http://sdkoning.com/PF/N.A.D.T..html) for more information on the project.
