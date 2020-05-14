@@ -1,5 +1,5 @@
 # EXP4
-The fourth VASD prototype. EXP4 builds further on [EXP3](https://github.com/StijndeK/VASD/tree/master/VASD_EXP3). The goal for EXP4 is to add basic parameter functionality using a visual approach.
+The fourth VASD prototype. EXP4 builds further on EXP3. The goal for EXP4 is to add basic parameter functionality using a visual approach.
 
 ## Example
 - [EXP4](https://streamable.com/wqf3h)
