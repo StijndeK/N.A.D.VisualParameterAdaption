@@ -1,5 +1,5 @@
 # EXP6
-The sixth VASD prototype. EXP6 builds further on [EXP5](https://github.com/StijndeK/VASD/tree/master/VASD_EXP5). The main goal for EXP6 is to create a 2D parameter space by adding a y-axis. Multiple axis with dynamic amounts of steps allows for a lot more possibilities in a non-linear system.
+The sixth VASD prototype. EXP6 builds further on EXP5. The main goal for EXP6 is to create a 2D parameter space by adding a y-axis. Multiple axis with dynamic amounts of steps allows for a lot more possibilities in a non-linear system.
 
 ## Example
 - [EXP6](https://streamable.com/uvkjxm)
