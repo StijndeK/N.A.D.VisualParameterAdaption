@@ -1,5 +1,5 @@
 # EXP5
-The fifth VASD prototype. EXP5 builds further on [EXP4](https://github.com/StijndeK/VASD/tree/master/VASD_EXP4). The goal for EXP5 is a more modulair framework with an easier to use GUI that also makes it easier to add and edit different components. 
+The fifth VASD prototype. EXP5 builds further on EXP4. The goal for EXP5 is a more modulair framework with an easier to use GUI that also makes it easier to add and edit different components. 
 
 ## Example
 - [EXP5](https://streamable.com/uvkjxm)
