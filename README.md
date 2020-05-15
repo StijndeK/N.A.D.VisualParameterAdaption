@@ -12,7 +12,8 @@ Procedural Audio System (working title) is the third experiment in a range of ex
 ## Example current version
 ![HighresScreenshot00046 copy](https://user-images.githubusercontent.com/31696336/81261235-fff5f200-903b-11ea-8ebb-8e6addefe3ef.png)
 
-- [This video](https://streamable.com/y6rm5e) shows the latest version of the project used to test audio systems for project Rookery. A walking simulator type game currently under development.
+[This video](https://streamable.com/y6rm5e) shows the latest version of the project used to test audio systems for project Rookery. A walking simulator type game currently under development.
+[A second video](https://streamable.com/33jgtx) shows a mockup of future possibilities for this tool.
 
 ### Older versions
 - [EXP3 video](https://streamable.com/434ev)
