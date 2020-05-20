@@ -1,6 +1,6 @@
 # N.A.D. Visual Parameter Adaption
 VPA is a prototype tool that uses a visual overview and interface along with the automatic file loading functionality carried over from [N.A.D Automatic File Loading](https://github.com/StijndeK/N.A.D.AutomaticSoundloader)
-, to look into upgrading the process of prototyping nonlinear systems and improving (interdisciplinary) communication. Because audio is a nonvisual medium and therefore always is experienced linearely, it can prove difficult to fully understand nonlinear audiosystems design.
+, to look into upgrading the process of prototyping nonlinear systems and improving (interdisciplinary) communication. Because audio is a nonvisual medium and therefore always is experienced linearely, it can prove difficult to clearly communicate about  nonlinear audiosystems design.
 
 ## NADT
 Procedural Audio System (working title) is the third experiment in a range of experiments meant to adress obstructions in the process of designing and prototyping nonlinear audiosystems. [Click here](http://sdkoning.com/PF/N.A.D.T..html) for more information on the project.
@@ -29,7 +29,7 @@ Because of the need for a visual interfase and the application of N.A.D. on game
 
 
 ## Current status & improvements
-As an investigation into using a visual approach to upgrade the process of designing nonlinear audio for games and communicating about them, VPA has achieved its goal. However, the project only scratches the surface of nonlinear gameaudio possibilities and its current version conditions the user quite heavily into using certain techniques. Moreover, the current system isnt easily adaptable enough, mainly due to the Unity based 'objectcomponents approach'. This is also the reason [the next experiment](https://github.com/StijndeK/N.A.D.ProcederalAudioSystem) completely steps away from this approach.
+As an investigation into using a visual approach to upgrade the process of designing nonlinear audio for games and communicating about them, VPA has achieved its goal. However, the project only scratches the surface of nonlinear gameaudio possibilities and its current version conditions the user quite heavily into using certain techniques. Moreover, the current system isnt easily adaptable enough, mainly due to the Unity based 'objectcomponents approach'. This is also one of the reasons for [the next experiment](https://github.com/StijndeK/N.A.D.ProcederalAudioSystem) completely stepping away from this approach.
 
 Features to be added in the future include:
 - Probability
